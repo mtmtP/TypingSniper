@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>タイピングスナイパー</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper"><!--この背景にロボット画像を指定-->
+        <div id="startup">
+            <div id="startup-content">
+                <div id="startup-header">
+                    <div id="startup-logo">
+                        <h1>Typing Sniper</h1>
+                        <p id="sub-title">タイピングスナイパー</p>
+                    </div>
+                    <div id="explanation">
+                        新感覚タイピングゲーム！<br>
+                        表示されているアルファベットのキーを押してね！<br>
+                        制限時間内に敵の耐久力を0にできないと負けだ！
+                    </div>
+                </div>
+                <div id="level-choise"><!--こいつらは初期画面に後々移動する-->
+                    <button id="game1"  onclick="gameStart(1)">level-1</button>
+                    <button id="game2"  onclick="gameStart(2)">level-2</button>
+                    <button id="game3"  onclick="gameStart(3)">level-3</button>
+                    <button id="game4"  onclick="gameStart(4)">level-4</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="header" class="clearfix">
+            <div id="logo">
+                <h1>TypingSniper</h1>
+                <!--ロゴはcssで作成-->    
+            </div>
+            <div id="indicate-area">
+                <div id="HP-area">
+                    <div id="grd-area"></div>
+                </div> <!--ここに体力バーが表示される-->
+                <div id="timer-area"></div><!--制限時間タイマーを表示-->
+            </div>
+        </div>
+        
+        <div id="magazine-div"><ul id ="magazine-ul"></ul></div><!--残り弾数を表示するエリア-->
+        <div id="comment"><ul id="list"></ul></div><!--コンソールと同じ役割をするエリア-->
+        <div id="sniper"></div>
+        <div id="snipe"><!--動的な要素たち-->
+            <div id="target"></div>
+            <div id="scope">
+                <p id="marc">
+                    <img src="img/scope2.png">
+                </p>
+                <p id="distans" class="hidden"></p>
+                <p id="text"></p>
+            </div>
+        </div>
+        <div id="game-over"><p>GAME OVER</p></div>
+        
+    </div>
+</body>
+<script src="TypingSniper3.js"></script>
+</html>
