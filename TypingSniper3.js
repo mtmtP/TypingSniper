@@ -418,7 +418,7 @@ function finalEnding() {
     sniper.style.backgroundImage = `url("img/pose_peace_sign_man.png")`;
     removeAllChildren(list);
     removeClassChildren(wrapperDiv, "hole");//弾痕を削除
-    const li = DOM(`li`, `よくやってくれた。これで地球の平和は保たれた。<br>君のおかげだ。ありがとう。`);
+    const li = DOM(`li`, `よくやった！これで地球の平和は保たれた。<br>君のおかげだ。ありがとう。`);
     commentDiv.appendChild(li);
     list.insertBefore(li, list.children[0]);
     scopeDiv.className = "hide";
